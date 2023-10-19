@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <title>Fitness Hub</title>
+  </head>
+  <body>
+    <!--This is just the nav component thats similar to the first page-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">FITNESS HUB</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 text-decoration-none text-light"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="trainers.html"
+                >Trainers</a
+              >
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--header for the trainers session section-->
+    <div class="trainer-log text-center">
+      <h2>Trainer Session</h2>
+      <!--made the table dark and have borders around each cell and 
+        made it have an effect for when its being hovered-->
+      <table
+        class="table table-bordered table-dark table-striped border-dark table-hover"
+      >
+      <!--made a table for different trainers and there specialties in fitness 
+        and availabilities-->
+        <thead>
+          <tr class="trainer-head-log border-bottom">
+            <!--made row for the head of each column-->
+            <th scope="col">TRAINER</th>
+            <th scope="col">STYLE</th>
+            <th scope="col">DAYS</th>
+          </tr>
+        </thead>
+        <tbody>
+            <!--put the trainers name/ style of fitness and days that they 
+                are availabilities-->
+          <tr>
+            <td>Bob</td>
+            <td>Weight Lifting</td>
+            <td>MONDAY-FRIDAY</td>
+          </tr>
+          <tr>
+            <td>Joe</td>
+            <td>Calisthenics</td>
+            <td>MONDAY-FRIDAY</td>
+          </tr>
+          <tr>
+            <td>Karen</td>
+            <td>Yoga</td>
+            <td>WEDNESDAY-FRIDAY</td>
+          </tr>
+          <tr>
+            <td>Sandy</td>
+            <td>Zumba</td>
+            <td>SUNDAY-SATURDAY</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--made a card component to all of different types of workout-->
+    <div class="d-flex">
+        <!--made the card be d-flex so it can we able to adapt to the width of device
+             screen-->
+      <div class="container text-center">
+        <!--this just centers all the text-->
+        <div class="row">
+            <!--this will allow it to be in a row while its in desktop mode-->
+          <div class="col-md p-3">
+            <!--it allows the cards to be a certain size while they are in a 
+                row or col state-->
+            <div id="card-1" class="card bg-dark text-light">
+              <img src="images/weight-lifting.jpg" alt="" width="100%" />
+              <!--added image in the card and made it fit to 100% in the container-->
+              <div class="card-body ">
+                <h4 class="card-title">Weight Lifting</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md p-3">
+            <div id="card-2" class="card bg-dark text-light">
+              <img src="images/calisthenics.jpg" alt="" width="100%" />
+              <div class="card-body ">
+                <h4 class="card-title">Calisthenics</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md p-3">
+            <div id="card-3" class="card bg-dark text-light">
+              <img src="images/yoga.jpg" alt="" width="100%" />
+              <div class="card-body">
+                <h4 class="card-title">Yoga</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md p-3">
+            <div id="card-4" class="card bg-dark text-light">
+              <img src="images/zumba.jpg" alt="" width="100%" />
+              <div class="card-body">
+                <h4 class="card-title">Zumba</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</html>
